@@ -117,6 +117,9 @@ int main(void)
 {
     InitWindow(800, 600, "Professional Software");
     InitAudioDevice();
+    Image icon = LoadImage("icon.png");
+    SetWindowIcon(icon);
+    UnloadImage(icon);
 
     SetTargetFPS(60);
 
